@@ -3,7 +3,7 @@
  */
 
 //Variables
-var DEV_KEY = 'f54f33d6-b22b-4375-852c-9eb092fe49a6';
+var DEV_KEY = '';
 
 //*createComparison* - The function to be called when the 'Compare!' button is clicked.
 //                   Creates tables of the summoners stats, using functions getSummonerId
