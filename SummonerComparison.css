@@ -1,0 +1,125 @@
+/********************************************************/
+/*** CSS for the Summoner1 and Summoner2 form section ***/
+/********************************************************/
+
+/* CSS for the first Summoner1 text (so it doesn't get overlapped by top border */
+#summoner1Text{
+    margin-top: 40px;
+}
+
+#summoner1Name, #summoner2Name{
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+#Summoner1, #Summoner2{
+    border: 1px solid black;
+    border-radius:8px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8px;
+    padding-left: 5px;
+    padding-bottom: 8px;
+    width:300px;
+    height:25px;
+    font-family: Impact, Charcoal, sans-serif;
+    color: #333333;
+    font-size: 20px;
+
+}
+
+#Summoner1:focus, #Summoner2:focus{
+    outline:0;
+    border: 2px solid #ff0f05;
+}
+
+#formSection{
+    text-align: center;
+}
+
+#compareButton{
+    font-family: Impact, Charcoal, sans-serif;
+    height: 60px;
+    width: 125px;
+    background-color: #ff0f05;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+#compareButton:focus{
+    outline:0;
+}
+
+
+p{
+    color: #333333;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size:20px;
+}
+
+/***********************************************************/
+/* CSS for the Summoner1 and Summoner2 stats table section */
+/***********************************************************/
+
+th{
+    color: #ff0f05;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 22px;
+}
+
+table { border: 1px solid black;float:left;width:300px;}
+
+#tables{
+    width:600px;margin:0 auto;
+}
+
+tr{
+    text-align: center;
+    font-family: Impact, Charcoal, sans-serif;
+    color: #333333;
+}
+
+/*********************************************************************/
+/* CSS for the body, background, and the top, left and right borders */
+/*********************************************************************/
+body{
+    background-color: white;
+    position: relative;
+}
+
+#left, #right, #top{
+    background: black;
+    position: fixed;
+}
+
+#left, #right{
+    top: 0;
+    bottom: 0;
+    width: 300px;
+}
+
+#left{ left:0; }
+
+#right{right:0;}
+
+#top{
+    left:0;
+    right:0;
+    top:0;
+    height:30px;
+    background: #ff0f05;
+    color: white;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size:20px;
+    text-align: center;
+    width: 750px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+
+
+
+
