@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head> <meta charset="UTF-8">
+    <!-- SummonerComparison.CSS -->
+    <link rel="stylesheet" type="text/css" href="SummonerComparison.css">
+    <title>League of Legends - Summoner Comparisons</title>
+</head>
+
+    <!-- Side and top borders of the page -->
+    <div id = "left"></div>
+    <div id = "right"></div>
+    <div id = "top">League of Legends - Summoner Stats Comparison</div>
+
+    <!-- Summoner Comparison Form -->
+    <div id ="formSection">
+        <p id = "summoner1Text">Summoner #1</p>
+        <input id="Summoner1"/> <br/>
+
+        <p id =" summoner2Text">Summoner #2</p>
+        <input id="Summoner2"/><br/> </br>
+
+        <input id = "compareButton" type="submit" value = "COMPARE" onclick = "createComparison()" /> </br>
+    </div>
+
+    <!-------------------------------->
+    <!-- Summoner Comparison Tables -->
+    <!-------------------------------->
+
+    <!-- First Summoner Table-->
+    <div id = "tables">
+            <table id = "summoner1stats">
+                <!--Ranked Team 5x5 Rows-->
+                <tr id="summoner1Name"></tr>
+                <tr> <th>Ranked Team 5x5</th></tr>
+                <tr>
+                    <td>Wins</td>
+                    <td id = "sum1RankedTeam5x5Wins"></td>
+                </tr>
+                <tr>
+                    <td>Losses</td>
+                    <td id = "sum1RankedTeam5x5Losses"></td>
+                </tr>
+
+                <!--Ranked Solo 5x5 Rows-->
+                <tr> <th>Ranked Solo 5x5</th></tr>
+                <tr>
+                    <td>Wins</td>
+                    <td id = "sum1RankedSolo5x5Wins"></td>
+                </tr>
+                <tr>
+                    <td>Losses</td>
+                    <td id = "sum1RankedSolo5x5Losses"></td>
+                </tr>
+
+                <!--Unranked 3x3 Rows-->
+                <tr> <th>Unranked 3x3</th></tr>
+                <tr>
+                    <td>Total Minion Kills</td>
+                    <td id = "sum1Unranked3x3MinionKills"></td>
+                </tr>
+                <tr>
+                    <td>Total Champion Kills</td>
+                    <td id = "sum1Unranked3x3ChampionKills"></td>
+                </tr>
+                <tr>
+                    <td>Total Assists</td>
+                    <td id = "sum1Unranked3x3Assists"></td>
+                </tr>
+                <tr>
+                    <td>Total Turret Kills</td>
+                    <td id = "sum1Unranked3x3TurretKills"></td>
+                </tr>
+                <tr>
+                    <td>Total Wins</td>
+                    <td id = "sum1Unranked3x3Wins"></td>
+                </tr>
+
+                <!--URF Rows-->
+                <tr> <th>URF</th></tr>
+                <tr>
+                    <td>Total Minion Kills</td>
+                    <td id = "sum1URFMinionKills"></td>
+                </tr>
+                <tr>
+                    <td>Total Champion Kills</td>
+                    <td id = "sum1URFChampionKills"></td>
+                </tr>
+                <tr>
+                    <td>Total Assists</td>
+                    <td id = "sum1URFAssists"></td>
+                </tr>
+                <tr>
+                    <td>Total Turret Kills</td>
+                    <td id = "sum1URFTurretKills"></td>
+                </tr>
+                <tr>
+                    <td>Total Wins</td>
+                    <td id = "sum1URFWins"></td>
+                </tr>
+
+                <!--Unranked 5x5 Rows-->
+                <tr> <th>Unranked 5x5</th></tr>
+                <tr>
+                    <td>Total Minion Kills</td>
+                    <td id = "sum1UnRanked5x5MinionKills"></td>
+                </tr>
+                <tr>
+                    <td>Total Champion Kills</td>
+                    <td id = "sum1UnRanked5x5ChampionKills"></td>
+                </tr>
+                <tr>
+                    <td>Total Assists</td>
+                    <td id = "sum1UnRanked5x5Assists"></td>
+                </tr>
+                <tr>
+                    <td>Total Turret Kills</td>
+                    <td id = "sum1UnRanked5x5TurretKills"></td>
+                </tr>
+                <tr>
+                    <td>Total Wins</td>
+                    <td id = "sum1UnRanked5x5Wins"></td>
+                </tr>
+
+                <!--ARAM 5x5Rows-->
+                <tr> <th>ARAM</th></tr>
+                <tr>
+                    <td>Total Champion Kills</td>
+                    <td id = "sum1ARAMChampionKills"></td>
+                </tr>
+                <tr>
+                    <td>Total Assists</td>
+                    <td id = "sum1ARAMAssists"></td>
+                </tr>
+                <tr>
+                    <td>Total Turret Kills</td>
+                    <td id = "sum1ARAMTurretKills"></td>
+                </tr>
+                <tr>
+                    <td>Total Wins</td>
+                    <td id = "sum1ARAMWins"></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Second Summoner Table -->
+
+            <table id = "summoner2stats">
+                <!--Ranked Team 5x5 Rows-->
+                <tr id = "summoner2Name"></tr>
+                <tr> <th>Ranked Team 5x5</th> </tr>
+                <tr>
+                    <td>Wins</td>
+                    <td id = "sum2RankedTeam5x5Wins"></td>
+                </tr>
+                <tr>
+                    <td>Losses</td>
+                    <td id = "sum2RankedTeam5x5Losses"></td>
+                </tr>
+
+                <!--Ranked Solo 5x5 Rows-->
+                <tr> <th>Ranked Solo 5x5</th></tr>
+                <tr>
+                    <td>Wins</td>
+                    <td id = "sum2RankedSolo5x5Wins"></td>
+                </tr>
+                <tr>
+                    <td>Losses</td>
+                    <td id = "sum2RankedSolo5x5Losses"></td>
+                </tr>
+
+                <!--Unranked 3x3 Rows-->
+                <tr> <th>Unranked 3x3</th></tr>
+                <tr>
+                    <td>Total Minion Kills</td>
+                    <td id = "sum2Unranked3x3MinionKills"></td>
+                </tr>
+                <tr>
+                    <td>Total Champion Kills</td>
+                    <td id = "sum2Unranked3x3ChampionKills"></td>
+                </tr>
+                <tr>
+                    <td>Total Assists</td>
+                    <td id = "sum2Unranked3x3Assists"></td>
+                </tr>
+                <tr>
+                    <td>Total Turret Kills</td>
+                    <td id = "sum2Unranked3x3TurretKills"></td>
+                </tr>
+                <tr>
+                    <td>Total Wins</td>
+                    <td id = "sum2Unranked3x3Wins"></td>
+                </tr>
+
+                <!--URF Rows-->
+                <tr> <th>URF</th></tr>
+                <tr>
+                    <td>Total Minion Kills</td>
+                    <td id = "sum2URFMinionKills"></td>
+                </tr>
+                <tr>
+                    <td>Total Champion Kills</td>
+                    <td id = "sum2URFChampionKills"></td>
+                </tr>
+                <tr>
+                    <td>Total Assists</td>
+                    <td id = "sum2URFAssists"></td>
+                </tr>
+                <tr>
+                    <td>Total Turret Kills</td>
+                    <td id = "sum2URFTurretKills"></td>
+                </tr>
+                <tr>
+                    <td>Total Wins</td>
+                    <td id = "sum2URFWins"></td>
+                </tr>
+
+                <!--Unranked 5x5 Rows-->
+                <tr> <th>Unranked 5x5</th></tr>
+                <tr>
+                    <td>Total Minion Kills</td>
+                    <td id = "sum2UnRanked5x5MinionKills"></td>
+                </tr>
+                <tr>
+                    <td>Total Champion Kills</td>
+                    <td id = "sum2UnRanked5x5ChampionKills"></td>
+                </tr>
+                <tr>
+                    <td>Total Assists</td>
+                    <td id = "sum2UnRanked5x5Assists"></td>
+                </tr>
+                <tr>
+                    <td>Total Turret Kills</td>
+                    <td id = "sum2UnRanked5x5TurretKills"></td>
+                </tr>
+                <tr>
+                    <td>Total Wins</td>
+                    <td id = "sum2UnRanked5x5Wins"></td>
+                </tr>
+
+                <!--ARAM 5x5Rows-->
+                <tr> <th>ARAM</th></tr>
+                <tr>
+                    <td>Total Champion Kills</td>
+                    <td id = "sum2ARAMChampionKills"></td>
+                </tr>
+                <tr>
+                    <td>Total Assists</td>
+                    <td id = "sum2ARAMAssists"></td>
+                </tr>
+                <tr>
+                    <td>Total Turret Kills</td>
+                    <td id = "sum2ARAMTurretKills"></td>
+                </tr>
+                <tr>
+                    <td>Total Wins</td>
+                    <td id = "sum2ARAMWins"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- --------- --->
+    <!-- JavaScript--->
+    <!-- --------- --->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="SummonerComparisonJS.js"></script>
+</body>
+</html>
