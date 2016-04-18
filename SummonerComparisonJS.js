@@ -3,6 +3,7 @@
  */
 
 //Variables
+//! Enter your DEV_KEY here prior to use
 var DEV_KEY = '';
 
 //*createComparison* - The function to be called when the 'Compare!' button is clicked.
